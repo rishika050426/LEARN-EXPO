@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background-color: rgb(155, 189, 192);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #003366;
+    }
+    .quiz {
+      margin-top: 2rem;
+    }
+    .quiz-question {
+      margin-bottom: 1.5rem;
+    }
+    .result {
+      margin-top: 2rem;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #013f4c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      display: block;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #470066;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #8400a5;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #66005e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #02708c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">HOME</a>
+    <div class="dropdown">
+      <a href="#modules">Modules</a>
+      <div class="dropdown-content">
+        <a href="module1.html">Introduction to Engineering</a>
+        <a href="module2.html">Ethics</a>
+        <a href="module3.html">Engineering Design</a>
+        <a href="module4.html">Mechanism</a>
+        <a href="module5.html">Project Management</a>
+        <a href="module6.html">Platform Based Development</a>
+        <a href="module7.html">Data Acquisition and Analysis</a>
+        <a href="module8.html">Sustainibility</a>
+        <a href="module9.html">Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#quiz">Take a Quiz</a>
+      <div class="dropdown-content">
+        <a href="IEQuiz.html">Quiz 1 - Introduction to Engineering</a>
+        <a href="EthicsQuiz.html">Quiz 2 - Ethics</a>
+        <a href="DesignQuiz.html">Quiz 3 - Engineering Design</a>
+        <a href="MechanismQuiz.html">Quiz 4 - Mechanism</a>
+        <a href="PMQuiz.html">Quiz 5 - Project Management</a>
+        <a href="PBDQuiz.html">Quiz 6 - Platform Based DMechanismQuizevelopment</a>
+        <a href="DAAQuiz.html">Quiz 7 - Data Acquisition and Analysis</a>
+        <a href="SustainabilityQuiz.html">Quiz 8 - Sustainibility</a>
+        <a href="StartupQuiz.html">Quiz 9 - Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <a href="https://www.csmss.org/" target="_blank">CSMSS CSCOE Website</a>
+  </nav>
+
+  <div class="container">
+    <h1>Project Management</h1>
+    <p>This module covers: Project Management fundamentals and applications.</p>
+
+    <div class="quiz">
+      <h2>Quiz</h2>
+      <form id="quizForm">
+        <div class="quiz-question">
+          <p>1. The first step in project management is?</p>
+          <label><input type="radio" name="q1" value="0"> A)Execution 
+</label><br>
+          <label><input type="radio" name="q1" value="1"> B)Monitoring</label><br>
+          <label><input type="radio" name="q1" value="0"> C)Initiation
+</label><br>
+          <label><input type="radio" name="q1" value="0"> D)Closing 
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>2. A gantt chart is used to?</p>
+          <label><input type="radio" name="q2" value="0"> A)Draw circuits 
+</label><br>
+          <label><input type="radio" name="q2" value="1"> B)Track project schedule 
+</label><br>
+          <label><input type="radio" name="q2" value="0"> C)Store data 
+</label><br>
+          <label><input type="radio" name="q2" value="0"> D)Present 
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>3. The three project constraints are?</p>
+          <label><input type="radio" name="q3" value="0"> A)Time cost slope</label><br>
+          <label><input type="radio" name="q3" value="1"> B)Design ethics tools </label><br>
+          <label><input type="radio" name="q3" value="0"> C)Labor money stock</label><br>
+          <label><input type="radio" name="q3" value="0"> D)Risk HR test</label>
+        </div>
+        <div class="quiz-question">
+          <p>4. Project scope define 
+?</p>
+          <label><input type="radio" name="q4" value="0"> A)Costs</label><br>
+          <label><input type="radio" name="q4" value="1"> B)Equipments</label><br>
+          <label><input type="radio" name="q4" value="0"> C)Skill level</label><br>
+          <label><input type="radio" name="q4" value="0"> D)Goals 
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>5. A milestone represents ?</p>
+          <label><input type="radio" name="q5" value="0"> A)End of project</label><br>
+          <label><input type="radio" name="q5" value="1"> B)Jacklist </label><br>
+          <label><input type="radio" name="q5" value="0"> C)Budget </label><br>
+          <label><input type="radio" name="q5" value="0"> D)Major achievement 
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>6. Risk management involves?</p>
+          <label><input type="radio" name="q6" value="0"> A)Avoiding risk entirely</label><br>
+          <label><input type="radio" name="q6" value="1"> B)Increasing risk </label><br>
+          <label><input type="radio" name="q6" value="0"> C)Identifying and minimising risk</label><br>
+          <label><input type="radio" name="q6" value="0"> D)Ignoring problems 
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>7. Resource allocation is ?</p>
+          <label><input type="radio" name="q7" value="0"> A)Assigning work and budget efficiently</label><br>
+          <label><input type="radio" name="q7" value="1"> B)Hiring workers</label><br>
+          <label><input type="radio" name="q7" value="0"> C)Estimating cost 
+</label><br>
+          <label><input type="radio" name="q7" value="0"> D)Monitoring risks</label>
+        </div>
+        <div class="quiz-question">
+          <p>8. Project execution phase involves?</p>
+          <label><input type="radio" name="q8" value="0"> A)Planning </label><br>
+          <label><input type="radio" name="q8" value="1"> B)Completing tasks 
+</label><br>
+          <label><input type="radio" name="q8" value="0"> C)Designing software</label><br>
+          <label><input type="radio" name="q8" value="0"> D)Testing code 
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>9. Project manager is responsible by ?</p>
+          <label><input type="radio" name="q9" value="0"> A)Only designing 
+</label><br>
+          <label><input type="radio" name="q9" value="1"> B)Accounts</label><br>
+          <label><input type="radio" name="q9" value="0"> C)Legal work</label><br>
+          <label><input type="radio" name="q9" value="0"> D)Team communication and delivery
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>10. Project closure includes?</p>
+          <label><input type="radio" name="q10" value="0"> A)New ideas generation </label><br>
+          <label><input type="radio" name="q10" value="1"> B)Final reviews and documentation</label><br>
+          <label><input type="radio" name="q10" value="0"> C)Scheduling </label><br>
+          <label><input type="radio" name="q10" value="0"> D)Risk analysis</label>
+        </div>
+        <button type="button" onclick="calculateScore()">Submit</button>
+      </form>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script>
+    function calculateScore() {
+      let form = document.forms["quizForm"];
+      let total = 0;
+      for (let i = 1; i <= 10; i++) {
+        if (form["q" + i]) {
+          let val = form["q" + i].value;
+          total += parseInt(val);
+        }
+      }
+      document.getElementById("result").innerText = `Your score: ${total}/10`;
+    }
+  </script>
+</body>
+
+</html>

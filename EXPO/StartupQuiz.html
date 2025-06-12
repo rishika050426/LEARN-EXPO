@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartUp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background-color: rgb(155, 189, 192);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #003366;
+    }
+    .quiz {
+      margin-top: 2rem;
+    }
+    .quiz-question {
+      margin-bottom: 1.5rem;
+    }
+    .result {
+      margin-top: 2rem;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #013f4c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      display: block;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #470066;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #8400a5;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #66005e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #02708c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">HOME</a>
+    <div class="dropdown">
+      <a href="#modules">Modules</a>
+      <div class="dropdown-content">
+        <a href="module1.html">Introduction to Engineering</a>
+        <a href="module2.html">Ethics</a>
+        <a href="module3.html">Engineering Design</a>
+        <a href="module4.html">Mechanism</a>
+        <a href="module5.html">Project Management</a>
+        <a href="module6.html">Platform Based Development</a>
+        <a href="module7.html">Data Acquisition and Analysis</a>
+        <a href="module8.html">Sustainibility</a>
+        <a href="module9.html">Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#quiz">Take a Quiz</a>
+      <div class="dropdown-content">
+        <a href="IEQuiz.html">Quiz 1 - Introduction to Engineering</a>
+        <a href="EthicsQuiz.html">Quiz 2 - Ethics</a>
+        <a href="DesignQuiz.html">Quiz 3 - Engineering Design</a>
+        <a href="MechanismQuiz.html">Quiz 4 - Mechanism</a>
+        <a href="PMQuiz.html">Quiz 5 - Project Management</a>
+        <a href="PBDQuiz.html">Quiz 6 - Platform Based Development</a>
+        <a href="DAAQuiz.html">Quiz 7 - Data Acquisition and Analysis</a>
+        <a href="SustainabilityQuiz.html">Quiz 8 - Sustainibility</a>
+        <a href="StartupQuiz.html">Quiz 9 - Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <a href="https://www.csmss.org/" target="_blank">CSMSS CSCOE Website</a>
+  </nav>
+
+  <div class="container">
+    <h1>StartUp</h1>
+    <p>This module covers: StartUp fundamentals and applications.</p>
+
+    <div class="quiz">
+      <h2>Quiz</h2>
+      <form id="quizForm">
+        <div class="quiz-question">
+          <p>1.  A startup is?</p>
+          <label><input type="radio" name="q1" value="0"> A)A large corporation</label><br>
+          <label><input type="radio" name="q1" value="1"> B)A new business with innovation focus</label><br>
+          <label><input type="radio" name="q1" value="0"> C)Government agency</label><br>
+          <label><input type="radio" name="q1" value="0"> D)Franchise</label>
+        </div>
+        <div class="quiz-question">
+          <p>2. An MVP stands for?</p>
+          <label><input type="radio" name="q2" value="0"> A)Most Valued Person
+</label><br>
+          <label><input type="radio" name="q2" value="1"> B)Minimum Viable Product</label><br>
+          <label><input type="radio" name="q2" value="0"> C)Maximum Value Plan</label><br>
+          <label><input type="radio" name="q2" value="0"> D)Market Value Product</label>
+        </div>
+        <div class="quiz-question">
+          <p>3. Venture capital iS?</p>
+          <label><input type="radio" name="q3" value="0"> A) Loan from bank</label><br>
+          <label><input type="radio" name="q3" value="1"> B)Funding from investors for startups</label><br>
+          <label><input type="radio" name="q3" value="0"> C)Government grant</label><br>
+          <label><input type="radio" name="q3" value="0"> D) Prize money
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>4. An incubator helps startups by?</p>
+          <label><input type="radio" name="q4" value="0"> A) Selling their product
+</label><br>
+          <label><input type="radio" name="q4" value="1"> B)Providing workspace and mentorship</label><br>
+          <label><input type="radio" name="q4" value="0"> C)Taking over company
+</label><br>
+          <label><input type="radio" name="q4" value="0"> D) Limiting innovation
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>5.  A pitch deck is?</p>
+          <label><input type="radio" name="q5" value="0"> A) Marketing flyer</label><br>
+          <label><input type="radio" name="q5" value="1"> B)Presentation to investors</label><br>
+          <label><input type="radio" name="q5" value="0"> C)Software</label><br>
+          <label><input type="radio" name="q5" value="0"> D)Logo
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>6. Which company started as a startup?</p>
+          <label><input type="radio" name="q6" value="1"> A)Microsoft</label><br>
+          <label><input type="radio" name="q6" value="0"> B)WHO</label><br>
+          <label><input type="radio" name="q6" value="0"> C)IMF</label><br>
+          <label><input type="radio" name="q6" value="0"> D)NASA
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>7. Bootstrapping means?</p>
+          <label><input type="radio" name="q7" value="0"> A) Relying on external funding</label><br>
+          <label><input type="radio" name="q7" value="1"> B)Using personal resources to fund startup</label><br>
+          <label><input type="radio" name="q7" value="0"> C)Ignoring profits
+</label><br>
+          <label><input type="radio" name="q7" value="0"> D)Hiring expensive staff
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>8. A pivot in startup means?</p>
+          <label><input type="radio" name="q8" value="1"> A) Changing product or strategy</label><br>
+          <label><input type="radio" name="q8" value="0"> B) Increasing prices</label><br>
+          <label><input type="radio" name="q8" value="0"> C) Expanding staff
+</label><br>
+          <label><input type="radio" name="q8" value="0"> D) Stopping operations</label>
+        </div>
+        <div class="quiz-question">
+          <p>9.Which of these is a popular startup accelerator?</p>
+          <label><input type="radio" name="q9" value="0"> A) Infosys
+</label><br>
+          <label><input type="radio" name="q9" value="1"> B)Y Combinator </label><br>
+          <label><input type="radio" name="q9" value="0"> C)Google Search
+</label><br>
+          <label><input type="radio" name="q9" value="0"> D)) Ford
+</label>
+        </div>
+        <div class="quiz-question">
+          <p>10. . Startup valuation is?</p>
+          <label><input type="radio" name="q10" value="0"> A)Cost of machinery
+</label><br>
+          <label><input type="radio" name="q10" value="1"> B)Estimated market value of a startup</label><br>
+          <label><input type="radio" name="q10" value="0"> C) Employee salary</label><br>
+          <label><input type="radio" name="q10" value="0"> D)Tax paid</label>
+        </div>
+        <button type="button" onclick="calculateScore()">Submit</button>
+      </form>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script>
+    function calculateScore() {
+      let form = document.forms["quizForm"];
+      let total = 0;
+      for (let i = 1; i <= 10; i++) {
+        if (form["q" + i]) {
+          let val = form["q" + i].value;
+          total += parseInt(val);
+        }
+      }
+      document.getElementById("result").innerText = `Your score: ${total}/10`;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Information - Template</title>
+  <link rel="stylesheet" href="module-style.css">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #026478;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0b969d;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      display: block;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #470066;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #8400a5;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #66005e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #02708c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <div class="dropdown">
+      <a href="#modules">Modules</a>
+      <div class="dropdown-content">
+        <a href="module1.html">Introduction to Engineering</a>
+        <a href="module2.html">Ethics</a>
+        <a href="module3.html">Engineering Design</a>
+        <a href="module4.html">Mechanism</a>
+        <a href="module5.html">Project Management</a>
+        <a href="module6.html">Platform Based Development</a>
+        <a href="module7.html">Data Acquisition and Analysis</a>
+        <a href="module8.html">Sustainibility</a>
+        <a href="module9.html">Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#quiz">Take a Quiz</a>
+      <div class="dropdown-content">
+        <a href="IEQuiz.html">Quiz 1 - Introduction to Engineering</a>
+        <a href="EthicsQuiz.html">Quiz 2 - Ethics</a>
+        <a href="DesignQuiz.html">Quiz 3 - Engineering Design</a>
+        <a href="MechanismQuiz.html">Quiz 4 - Mechanism</a>
+        <a href="PMQuiz.html">Quiz 5 - Project Management</a>
+        <a href="PBDQuiz.html">Quiz 6 - Platform Based Development</a>
+        <a href="DAAQuiz.html">Quiz 7 - Data Acquisition and Analysis</a>
+        <a href="SustainabilityQuiz.html">Quiz 8 - Sustainibility</a>
+        <a href="StartupQuiz.html">Quiz 9 - Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <a href="https://www.csmss.org/" target="_blank">CSMSS CSCOE Website</a>
+  </nav>
+
+  <div class="module-container">
+    <header class="module-header">
+      <h1>Platform-Based Development</h1>
+    </header>
+
+    <section class="module-banner">
+      <img src="images/M6IM1.png" alt="Engineering Banner">
+    </section>
+
+    <section class="module-content">
+      <div class="text-block">
+        <h2>Overview of Development</h2>
+        <p>Platform-based development refers to the approach of creating applications, systems, or services using a specific computing platform. This platform provides a predefined environment, including software frameworks, tools, operating systems, and hardware, to streamline and standardize the development process.<br><br>
+
+Key Features:<br>
+
+Efficiency: Developers reuse existing components instead of building everything from scratch.<br><br>
+
+Standardization: Ensures consistent design, testing, and deployment.<br><br>
+
+Scalability: Supports growth by using flexible and expandable platforms.<br><br>
+
+Faster Time to Market: Reduces development cycle using pre-built libraries and tools..</p>
+      </div>
+
+      <div class="img-text-block">
+        <img src="images/M6IM2.png"alt="Engineering Banner">
+        <div>
+          <h2> Platform</h2>
+          <p>A platform in software development is the underlying environment that supports the execution and development of applications.<br><br><br>
+
+Types of Platforms:<br><br>
+
+Hardware Platforms: Physical devices like computers, mobile phones, or embedded systems.<br><br>
+
+Software Platforms: Operating systems or runtime environments (e.g., Windows, Linux, Android).<br><br>
+
+Application Platforms: Pre-configured development ecosystems (e.g., .NET, Java EE, Node.js).<br><br>
+
+Cloud Platforms (PaaS): Online environments like Google App Engine, AWS Elastic Beanstalk..</p>
+        </div>
+      </div>
+
+      <div class="text-block">
+        <img src="images/M6IM3.png"alt="Engineering Banner">
+
+      </div>
+    </section>
+
+    <footer class="module-footer">
+      <p>&copy; 2025 Center for Engineering Exploration, CSMSS CSCOE</p>
+    </footer>
+  </div>
+</body>
+
+</html>

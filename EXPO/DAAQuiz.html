@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Acquisition and Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background-color: rgb(155, 189, 192);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #003366;
+    }
+    .quiz {
+      margin-top: 2rem;
+    }
+    .quiz-question {
+      margin-bottom: 1.5rem;
+    }
+    .result {
+      margin-top: 2rem;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #013f4c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      display: block;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #470066;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #8400a5;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #66005e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #02708c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">HOME</a>
+    <div class="dropdown">
+      <a href="#modules">Modules</a>
+      <div class="dropdown-content">
+        <a href="module1.html">Introduction to Engineering</a>
+        <a href="modules/ethics.html">Ethics</a>
+        <a href="modules/design.html">Engineering Design</a>
+        <a href="modules/platform.html">Mechanism</a>
+        <a href="modules/mechanism.html">Project Management</a>
+        <a href="modules/data.html">Platform Based Development</a>
+        <a href="modules/sustainability.html">Data Acquisition and Analysis</a>
+        <a href="modules/project.html">Sustainibility</a>
+        <a href="modules/startup.html">Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#quiz">Take a Quiz</a>
+      <div class="dropdown-content">
+        <a href="IEQuiz.html">Quiz 1 - Introduction to Engineering</a>
+        <a href="quiz2.html">Quiz 2 - Ethics</a>
+        <a href="quiz3.html">Quiz 3 - Engineering Design</a>
+        <a href="quiz4.html">Quiz 4 - Mechanism</a>
+        <a href="quiz5.html">Quiz 5 - Project Management</a>
+        <a href="quiz6.html">Quiz 6 - Platform Based Development</a>
+        <a href="quiz7.html">Quiz 7 - Data Acquisition and Analysis</a>
+        <a href="quiz8.html">Quiz 8 - Sustainibility</a>
+        <a href="quiz9.html">Quiz 9 - Startup Ecosystem Awareness</a>
+      </div>
+    </div>
+    <a href="https://www.csmss.org/" target="_blank">CSMSS CSCOE Website</a>
+  </nav>
+
+  <div class="container">
+    <h1>Data Acquisition and Analysis</h1>
+    <p>This module covers: Data Acquisition and Analysis fundamentals and applications.</p>
+
+    <div class="quiz">
+      <h2>Quiz</h2>
+      <form id="quizForm">
+        <div class="quiz-question">
+          <p>1.  Data acquisition means?</p>
+          <label><input type="radio" name="q1" value="0"> A)Storing files</label><br>
+          <label><input type="radio" name="q1" value="1"> B)Collecting and measuring data </label><br>
+          <label><input type="radio" name="q1" value="0"> C)Selling data</label><br>
+          <label><input type="radio" name="q1" value="0"> D)Encrypting text</label>
+        </div>
+        <div class="quiz-question">
+          <p>2. Sensors convert physical quantities to ?</p>
+          <label><input type="radio" name="q2" value="0"> A)Graphs</label><br>
+          <label><input type="radio" name="q2" value="1"> B)Signals </label><br>
+          <label><input type="radio" name="q2" value="0"> C)Energy</label><br>
+          <label><input type="radio" name="q2" value="0"> D)Noise</label>
+        </div>
+        <div class="quiz-question">
+          <p>3. Which of these is used for data logging?</p>
+          <label><input type="radio" name="q3" value="0"> A)Pen drive</label><br>
+          <label><input type="radio" name="q3" value="0"> B) Microcontroller</label><br>
+          <label><input type="radio" name="q3" value="0"> C)Ruler</label><br>
+          <label><input type="radio" name="q3" value="1"> D)Battery</label>
+        </div>
+        <div class="quiz-question">
+          <p>4. The first step in data analysis is?</p>
+          <label><input type="radio" name="q4" value="0"> A) Visualization</label><br>
+          <label><input type="radio" name="q4" value="0"> B)Data cleaning</label><br>
+          <label><input type="radio" name="q4" value="1"> C)Reporting</label><br>
+          <label><input type="radio" name="q4" value="0"> D)Machine learning</label>
+        </div>
+        <div class="quiz-question">
+          <p>5. Accuracy refers to?</p>
+          <label><input type="radio" name="q5" value="0"> A)Repetition</label><br>
+          <label><input type="radio" name="q5" value="1"> B)Closeness to true value</label><br>
+          <label><input type="radio" name="q5" value="0"> C)Randomness</label><br>
+          <label><input type="radio" name="q5" value="0"> D) Calibration</label>
+        </div>
+        <div class="quiz-question">
+          <p>6. Which tool is used for data plotting?</p>
+          <label><input type="radio" name="q6" value="0"> A)Paint</label><br>
+          <label><input type="radio" name="q6" value="1"> B)MS Excel</label><br>
+          <label><input type="radio" name="q6" value="0"> C)Zoom</label><br>
+          <label><input type="radio" name="q6" value="0"> D)VLC</label>
+        </div>
+        <div class="quiz-question">
+          <p>7. A temperature sensor is?</p>
+          <label><input type="radio" name="q7" value="1"> A)Thermistor </label><br>
+          <label><input type="radio" name="q7" value="0"> B)Resistor</label><br>
+          <label><input type="radio" name="q7" value="0"> C)Motor</label><br>
+          <label><input type="radio" name="q7" value="0"> D)Capacitor</label>
+        </div>
+        <div class="quiz-question">
+          <p>8. Sampling rate determines?</p>
+          <label><input type="radio" name="q8" value="0"> A)Sensor type</label><br>
+          <label><input type="radio" name="q8" value="1"> B)Frequency of data collection</label><br>
+          <label><input type="radio" name="q8" value="0"> C)Noise level</label><br>
+          <label><input type="radio" name="q8" value="0"> D)Voltage</label>
+        </div>
+        <div class="quiz-question">
+          <p>9.What is noise in data?</p>
+          <label><input type="radio" name="q9" value="0"> A)Clean signals</label><br>
+          <label><input type="radio" name="q9" value="1"> B) Random errors or disturbances</label><br>
+          <label><input type="radio" name="q9" value="0"> C)Musical tone</label><br>
+          <label><input type="radio" name="q9" value="0"> D)Data type</label>
+        </div>
+        <div class="quiz-question">
+          <p>10.Data visualization helps to?</p>
+          <label><input type="radio" name="q10" value="0"> A) Hide errors</label><br>
+          <label><input type="radio" name="q10" value="1"> B)Interpret data clearly</label><br>
+          <label><input type="radio" name="q10" value="0"> C)Compress files</label><br>
+          <label><input type="radio" name="q10" value="0"> D) Encrypt values</label>
+        </div>
+        <button type="button" onclick="calculateScore()">Submit</button>
+      </form>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script>
+    function calculateScore() {
+      let form = document.forms["quizForm"];
+      let total = 0;
+      for (let i = 1; i <= 10; i++) {
+        if (form["q" + i]) {
+          let val = form["q" + i].value;
+          total += parseInt(val);
+        }
+      }
+      document.getElementById("result").innerText = `Your score: ${total}/10`;
+    }
+  </script>
+</body>
+
+</html>
